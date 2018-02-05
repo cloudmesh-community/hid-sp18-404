@@ -1,0 +1,10 @@
+# This file will have to be updated by you throughout the semester, for
+# now just fill out the owner.  This is a yaml file and must be validated
+# by you. If you do nopt know how to do that, your first task is to
+# write a python3 program that does this.
+---
+owner:
+  - firstname: "Rick"
+  - lastname: "Carmickle"
+  - hid: "404"
+  - community: "e516"
