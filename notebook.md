@@ -4,7 +4,8 @@
 
 # Logistic
 * 2018/02/05 Created bio.tex and README.yml in Github
-* 2018/02/06 Created notebook.md on Github
+* 2018/02/08 Created notebook.md on Github
+* 2018/02/08 Formatted Github repository to meet class requirements
 
 
 # Theory
