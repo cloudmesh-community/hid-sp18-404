@@ -6,6 +6,7 @@
 * 2018/02/05 Created bio.tex and README.yml in Github
 * 2018/02/08 Created notebook.md on Github
 * 2018/02/08 Formatted Github repository to meet class requirements
+* 2018/02/20 Created 32-bit Ubuntu virtual machine (after troubleshooting Win 10 virtualization)
 
 
 # Theory
@@ -24,6 +25,7 @@
 * 2018/01/26 Contributed to Assignment: New Technology List (Pivotal, Apache Drill, Mesosphere, Apache Mesos, Caffe)
 * 2018/01/30 Contributed to Assignment: New Technology Abstract (Pivotal, Apache Drill) in Google Docs
 * 2018/02/02 Contributed to Assignment: New Technology Abstract (Mesosphere, Apache Mesos, Caffe) in Google Docs
+* 2018/02/18 Uploaded astracts to github
 
 # Communication
 
