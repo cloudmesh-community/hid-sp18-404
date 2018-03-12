@@ -17,6 +17,7 @@
 
 
 # Practice
+* 2018/03/13 Discovered and began lecture videos
 
 
 # Writing
