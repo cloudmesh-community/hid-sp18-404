@@ -29,6 +29,7 @@
 * 2018/02/02 Contributed to Assignment: New Technology Abstract (Mesosphere, Apache Mesos, Caffe) in Google Docs
 * 2018/02/18 Uploaded astracts to github
 * 2018/03/01 Began Paper on Apache Mesos and Mesosphere
+* 2018/03/16 Completed and submitted paper Apache Mesos and Mesosphere
 
 # Communication
 
