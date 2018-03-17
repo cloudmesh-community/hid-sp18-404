@@ -8,6 +8,7 @@
 * 2018/02/08 Formatted Github repository to meet class requirements
 * 2018/02/20 Created 32-bit Ubuntu virtual machine (after troubleshooting Win 10 virtualization)
 * 2018/03/06 Uploaded REST service
+* 2018/03/16 Began Tutotial and Project Idea: Spark on Docker
 
 
 # Theory
