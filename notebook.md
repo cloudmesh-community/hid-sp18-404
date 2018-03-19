@@ -15,10 +15,13 @@
 * 2018/01/16 Watched video: Introduction to Classes
 * 2018/01/24 Watched video: REST
 * 2018/02/05 Watched video: swagger
+* 2013/03/15 Completed lecture material A through I
+* 2018/03/19 Completed lecture material J through M
 
 
 # Practice
 * 2018/03/13 Discovered and began lecture videos
+* 2018/03/19 Revisiting Swagger assignment to complete
 
 
 # Writing
