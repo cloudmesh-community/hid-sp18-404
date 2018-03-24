@@ -211,23 +211,11 @@ Set yours accordingly.
  
 Edit zoo_sample.cfg to reflect the changes to dataDir and clientPort
 ```
-# The number of milliseconds of each tick
-tickTime=2000
-# The number of ticks that the initial
-# synchronization phase can take
-initLimit=10
-# The number of ticks that can pass between
-# sending a request and getting an acknowledgement
-syncLimit=5
-# the directory where the snapshot is stored.
-# do not use /tmp for storage, /tmp here is just
-# example sakes.
-**dataDir=/home/rick/zookeeper/data**
-# the port at which the clients will connect
-**clientPort=2181**
-# the maximum number of client connections.
-# increase this if you need to handle more clients
-#maxClientCnxns=60
+
+dataDir=/home/rick/zookeeper/data
+
+clientPort=2181
+
 ```
 
 
