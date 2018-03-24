@@ -5,22 +5,19 @@ running through Oracle VM VirtualBox on a host Windows10 Home host system
 Installation of Zookeeper on Ubuntu requires the prior installation of Hadoop. 
 Java OpenJDK is a prerequisite for both Hadoop and Zookeeper
 
-```
 
-```
-
-##Install Java-OpenJDK-8
+## Install Java-OpenJDK-8
 Run system package updates
 ```
 sudo apt-get update
 sudo apt-get upgrade
 ```
-Install Java OpenJDK-8
+Download and install Java OpenJDK-8
 ```
 sudo apt-get install openjdk-8-jdk
 ```
 
-##Install Hadoop
+## Install Hadoop
 
 The Hadoop prerequisite portion of the tutorial follows the instructions at http://idroot.net/linux/install-apache-hadoop-ubuntu-16-04-lts/
 
@@ -173,7 +170,7 @@ start-yarn.sh
 
 
 
-##Install single instance of Zookeeper
+## Install single instance of Zookeeper
 The Zookeeper tutorial builds on the tutorial at https://my-bigdata-blog.blogspot.com/2017/07/apache-Zookeeper-install-Ubuntu.html
 You must have Java installed and JAVA_HOME set, as described in the Hadoop prerequisite portion.
 
@@ -293,7 +290,7 @@ The server is shutoff with the command
 sudo su -p - zookeeper -c "/usr/local/zookeeper/bin/zkServer.sh stop"
 ```
 
-##Deploy multiple instances of Zookeeper
+## Deploy multiple instances of Zookeeper
 To deploy multiple isntances of Zookeeper, repeat the single isntance steps with the following changes
 
 When unpacking and renaming Zookeeper from the tar.gz file, duplicate the unpacked instance with an iterated name.
