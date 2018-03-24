@@ -341,13 +341,13 @@ sudo su -p - zookeeper -c "/usr/local/zookeeper2/bin/zkServer.sh start"
 ```
 
  
-The status of the server is tested with the command 
+The status of the second server is tested with the command 
 ```
 echo srvr | nc localhost 2182
 ```
  
  
-The server is shutoff with the command
+The second server is shutoff with the command
 ```
 sudo su -p - zookeeper -c "/usr/local/zookeeper2/bin/zkServer.sh stop"
 ```
