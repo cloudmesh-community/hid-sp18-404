@@ -9,6 +9,8 @@
 * 2018/02/20 Created 32-bit Ubuntu virtual machine (after troubleshooting Win 10 virtualization)
 * 2018/03/06 Uploaded REST service
 * 2018/03/16 Began Tutotial and Project Idea: Spark on Docker
+* 2018/03/16 Created Chameleon Cloud instance of Ubuntu for project testing
+* 2018/03/26 Creating baseline VM of Ubuntu with Scala and Spark installed for project
 
 
 # Theory
@@ -36,6 +38,7 @@
 * 2018/02/18 Uploaded astracts to github
 * 2018/03/01 Began Paper on Apache Mesos and Mesosphere
 * 2018/03/16 Completed and submitted paper Apache Mesos and Mesosphere
+* 2018/03/26 Revised bibliography for paper
 
 # Communication
 
