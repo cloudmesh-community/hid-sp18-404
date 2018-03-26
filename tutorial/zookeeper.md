@@ -17,7 +17,7 @@ Download and install Java OpenJDK-8
 sudo apt-get install openjdk-8-jdk
 ```
 
-## Install Hadoop
+## Install and configure Hadoop
 
 The Hadoop prerequisite portion of the tutorial follows the instructions at http://idroot.net/linux/install-apache-hadoop-ubuntu-16-04-lts/
 
@@ -29,17 +29,15 @@ sudo adduser -ingroup hadoopgroup hadoopuser
 
 Create an SSH key for the hadoopuser
 ```
+sudo apt-get install ssh
 su - hadoopuser
 ssh-keygen -t rsa -P ""
-cat /home/hadoopuser/.ssh/id_rsa.pub >> /home/hadoopuser/.ssh/authorized_keys
+cd $HOME/.ssh
+cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
 chmod 600 authorized_keys
-ssh-copy-id -i ~/.ssh/id_rsa.pub slave-1
-ssh slave-1
 ```
 
-
 Download and unpack the latest Apache Hadoop
-
 ```
 sudo wget http://www-us.apache.org/dist/hadoop/common/hadoop-3.0.0/hadoop-3.0.0.tar.gz
 tar xzf hadoop-3.0.0.tar.gz
@@ -47,9 +45,8 @@ mv hadoop-3.0.0 hadoop
 ```
 
 
-Fourth, configure Apache Hadoop
+Configure Apache Hadoop
 Begin configuration with the Hadoop variables in bashrc
-
 ```
 gedit ~/.bashrc
 ```
@@ -65,38 +62,26 @@ export YARN_HOME=$HADOOP_HOME
 export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
 export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
 ```
- 
 Ensure the HADOOP_HOME variable is set to the correct path to your Hadoop installation. 
-In this development, for example, the variable in bashrc was set as 
-
-```
-export HADOOP_HOME=/home/rick/hadoop
-```
 
  
 Apply bashrc variables to the current session
 ```
 source ~/.bashrc
 ```
- 
-Edit $HADOOP_HOME/etc/hadoop/hadoop-env.sh to set the JAVA_HOME environment
-The base tutorial uses the variable:
-```
-export JAVA_HOME=/usr/jdk1.8.0_74/
-```
- 
-This may not be correct for your configuraion. 
-Locate the path for your installation of Java OpenJDK. 
-This example's variable has the following line appended to the bottom of hadoop-env.sh
 
-```
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-i386
-```
-
- 
 Navigate to the hadoop configuration folder to use gedit to configure necessary files
 ```
 cd $HADOOP_HOME/etc/hadoop
+```
+
+
+Edit $HADOOP_HOME/etc/hadoop/hadoop-env.sh to set the JAVA_HOME environment
+by appending a JAVA_HOME variable to the bottom of the file. 
+Locate the path for your installation of Java.
+
+```
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-i386
 ```
 
  
@@ -131,6 +116,7 @@ Edit hdfs-site.xml. The file path in the value fields should match your hadoop i
 
 
 Edit mapred-site.xml to:
+
 ```
 <configuration>
  <property>
@@ -142,6 +128,7 @@ Edit mapred-site.xml to:
 
 
 Edit yarn-site.xml to: 
+
 ```
 <configuration>
  <property>
@@ -163,10 +150,6 @@ cd $HADOOP_HOME/sbin/
 start-dfs.sh
 start-yarn.sh
 ```
-
-
-
-
 
 
 
