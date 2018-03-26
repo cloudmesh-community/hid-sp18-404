@@ -22,6 +22,8 @@
 # Practice
 * 2018/03/13 Discovered and began lecture videos
 * 2018/03/19 Revisiting Swagger assignment to complete
+* 2018/03/18 Uploaded Zookeeper tutorial
+* 2018/03/19 Uploaded Mahout tutorial and revised Zookeeper tutorial
 
 
 # Writing
