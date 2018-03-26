@@ -176,10 +176,8 @@ tar xvf zookeeper-3.4.10.tar.gz
 
  
 Move and rename the instance of zookeeper to your desired directory. 
-This instance is placed in /home/rick/zookeeper
-
 ```
-sudo mv zookeeper-3.4.10 /home/rick/zookeeper
+sudo mv zookeeper-3.4.10 /home/zookeeper
 ```
  
 
@@ -187,15 +185,15 @@ Navigate to the conf folder in the zookeeper isntance.
 The zookeeper configuration file is by default named *zoo_sample.cfg* 
 This file is going to be edited to correct the dataDir variable to the 
 correct directory of the zookeeper instance and set the clientPort.
-Since the zookeeper directory for this instance is /home/rick/zookeeper 
-the dataDir will be set to /home/rick/zookeeper/data. 
+Since the zookeeper directory for this instance is /home/zookeeper 
+the dataDir will be set to /home/zookeeper/data. 
 Set yours accordingly. 
  
  
 Edit zoo_sample.cfg to reflect the changes to dataDir and clientPort
 ```
 
-dataDir=/home/rick/zookeeper/data
+dataDir=/home/zookeeper/data
 
 clientPort=2181
 
@@ -207,7 +205,7 @@ Finalize the creation zoo.cfg file with the command
 mv zoo_sample.cfg zoo.cfg
 ```
 
-Navigate to the Zookeeper instance's conf directory (/home/rick/zookeeper/conf) 
+Navigate to the Zookeeper instance's conf directory (/home/zookeeper/conf) 
 and create a java.env file to create log parameters. 
 java.env should contain two lines of text in the format:
 
@@ -218,29 +216,23 @@ ZOO_LOG_DIR="/home/zookeeper/logs"
 
 
 The file path set in the *ZOO_LOG_DIR* variable should be a directory called *logs* within the zookeeper instance. 
-This installation therefore appends the following line as the second in the file.
-
-```
-ZOO_LOG_DIR="/home/rick/zookeeper/logs"
-```
-
 
 
 The *data* and *logs* directories need to be made in the zookeeper instance directory
 ```
-mkdir /home/rick/zookeeper/data
-mkdir /home/rick/zookeeper/logs
+mkdir /home/zookeeper/data
+mkdir /home/zookeeper/logs
 ```
  
 Create a myid file in the data directory
 ```
-echo "1" /home/rick/zookeeper/data/myid
+echo "1" /home/zookeeper/data/myid
 ```
 
 
 Change the ownership of the zookeeper instance
 ```
-sudo chown -R zookeeper:hadoopgroup /home/rick/zookeeper
+sudo chown -R zookeeper:hadoopgroup /home/zookeeper
 ```
 
  
@@ -276,7 +268,7 @@ When confuguring zoo_sample.cfg and converting it to zoo.cfg, update the dataDir
 Also iterate the clientPort from a starting clientPort of 2181
 
 ```
-**dataDir=/home/rick/zookeeper2/data**
+**dataDir=/home/zookeeper2/data**
 # the port at which the clients will connect
 **clientPort=2182**
 ``` 
@@ -291,14 +283,14 @@ ZOO_LOG_DIR="/home/zookeeper2/logs"
  
 When creating the data and log directories, update the directory.
 ``` 
-mkdir /home/rick/zookeeper2/data
-mkdir /home/rick/zookeeper2/logs 
+mkdir /home/zookeeper2/data
+mkdir /home/zookeeper2/logs 
 ```
  
  
 When creating the myid file in the data directory
 ```
-echo "2" /home/rick/zookeeper/data/myid
+echo "2" /home/zookeeper/data/myid
 ```
  
 Change the ownership of the second instance.
