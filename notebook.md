@@ -1,6 +1,7 @@
 # Meetings
 * 2018/02/05 Attended online meeting to understand assignment: Cloud and Big Data Rest Service with Swagger
 * 2018/03/19 Attended online meeting
+* 2018/04/09 Attended online meeting with project questions
 
 # Logistic
 * 2018/02/05 Created bio.tex and README.yml in Github
