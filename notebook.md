@@ -12,6 +12,7 @@
 * 2018/03/16 Began Tutotial and Project Idea: Spark on Docker
 * 2018/03/16 Created Chameleon Cloud instance of Ubuntu for project testing
 * 2018/03/26 Creating baseline VM of Ubuntu with Scala and Spark installed for project
+* 2018/04/06 Discovered Docker does not run on Ubuntu i386. Need other solution for Ubuntu VM
 
 
 # Theory
