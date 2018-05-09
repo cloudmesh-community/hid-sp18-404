@@ -1,6 +1,24 @@
 % status: 0
 % chapter: PaaS
 
+\def\paperstatus{0} % a number from 0-100 indicating your status. 100
+                % means completed
+\def\paperchapter{PaaS} % This section is typically a single keyword. from
+                   % a small list. Consult with theinstructors about
+                   % yours. They typically fill it out once your first
+                   % text has been reviewed.
+\def\hid{hid-sp18-404} % all hids of the authors of this
+                                % paper. The paper must only be in one
+                                % authors directory and all other
+                                % authors contribute to it in that
+                                % directory. That authors hid must be
+                                % listed first
+\def\volume{9} % the volume of the proceedings in which this paper is to
+           % be included
+
+\def\locator{\hid, Volume: \volume, Chapter: \paperchapter, Status:
+  \paperstatus. \newline}
+
 \title{Benchmarking Apache Spark on Docker}
 
 
@@ -34,7 +52,7 @@ This paper will describe the creation of and use of multiple instances of Apache
 on the Docker container framework and the results of data benchmarking on different machones. 
 \end{abstract}
 
-\keywords{hid-sp18-404, Spark, Hadoop, Docker}
+\keywords{\locator\ Spark, Hadoop, Docker}
 
 
 \maketitle
